@@ -1,0 +1,19 @@
+server.port: 8082
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://eep52database.mysql.database.azure.com:3306/employeedatabase?useSSL=true
+    username: sqladmin
+    password: Admin@123
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  application:
+    name: employee-service
+  config:
+    import: optional:configserver:http://localhost:8888/
+    #profiles:
+    # active: docker
+
