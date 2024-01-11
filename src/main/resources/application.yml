@@ -2,7 +2,7 @@ server.port: 8082
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://eep52database.mysql.database.azure.com:3306/employeedatabase?useSSL=true
+    url: jdbc:mysql://organisationdatabase.mysql.database.azure.com:3306/employees?useSSL=true
     username: sqladmin
     password: Admin@123
   jpa:
